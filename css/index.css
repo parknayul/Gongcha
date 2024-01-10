@@ -305,12 +305,9 @@ li {
 }
 
 .section01 .inner .cont_banner .img>a figure img:hover {
-    transition: all 1.5s;
+    transform: scale(1.1);
+    transition: all 1s;
     opacity: 1.0;
-}
-
-.section01 .inner .cont_banner .img:hover .text {
-    display: none;
 }
 
 .section01 .inner .cont_banner>.img {
@@ -382,6 +379,7 @@ li {
 
 .Menu .swiper-slide .list {
     width: calc(1800 / 4 - 20px);
+    padding: 20px;
     border-radius: 15px;
     /* background-color: #f5f5f5; */
 }
@@ -636,11 +634,6 @@ li {
 .combi .inner .combi_item .combi_list figure img:hover {
     transform: scale(1.1);
     transition: all 1s;
-}
-
-.combi .inner .combi_item .combi_list:hover .name {
-    display: none;
-    transition: all 0.5s;
 }
 
 /* .combi .inner .combi_item .combi_list a figure::before {
