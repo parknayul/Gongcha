@@ -304,7 +304,7 @@ li {
     justify-content: space-between;
 }
 
-.section01 .inner .cont_banner .img>a figure img:hover {
+.section01 .inner .cont_banner .img:hover {
     transform: scale(1.1);
     transition: all 1s;
     opacity: 1.0;
@@ -312,6 +312,7 @@ li {
 
 .section01 .inner .cont_banner>.img {
     position: relative;
+    opacity: 0.5;
 }
 
 .section01 .inner .cont_banner .img>a figure {
@@ -324,7 +325,6 @@ li {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.5;
 }
 
 .section01 .inner .cont_banner>.img .text {
