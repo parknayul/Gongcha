@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>공차사이트리뉴얼</title>
-  <!-- Link Swiper's CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/index.css">
 </head>
@@ -566,18 +566,13 @@
   </footer><!-- #footer -->
   </div><!-- #wrap end -->
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!--   <script>
-    $(window).on("load", function () {
-      $("#load").fadeOut(2500);
-    });
-  </script> -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       // 페이지 로딩이 시작될 때 로딩 화면을 표시
@@ -613,10 +608,9 @@
       var content = document.getElementById("wrap");
       content.style.display = "block"; // 컨텐츠를 보여줌
     }
-  </script>
 
-  <!-- Initialize Swiper -->
-  <script>
+ 
+  
     var swiper = new Swiper(".mySwiper", {
       navigation: {
         nextEl: ".swiper-button-next",
@@ -641,15 +635,7 @@
         prevEl: ".swiper-button-prev",
       },
     });
-  </script>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    AOS.init();
-  });
-</script>
-
-  <script>
     $(window).on("scroll", function () {
       if ($(window).scrollTop() > 50) {
         $(".header").addClass("active");
@@ -657,8 +643,9 @@
         //remove the background property so it comes transparent again (defined in your css)
         $(".header").removeClass("active");
       }
-      //https://stackoverflow.com/questions/28266651/change-header-background-colour-when-page-scrolls
     });
+
+       AOS.init();
   </script>
 
 </body>
