@@ -95,6 +95,13 @@
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
+                <a href="#">
+                  <figure>
+                    <img src="공차_img/공차 멤버십 이벤트.jpg" alt="멤버십 이벤트" />
+                  </figure>
+                </a>
+              </div><!-- .swiper-slide end -->
+              <div class="swiper-slide">
                 <div class="swiper-slide">
                   <figure>
                     <img src="공차_img/공차_신메뉴 딸기.jpg" alt="공차 신메뉴 딸기" />
@@ -350,7 +357,7 @@
     </section><!-- .Menu end -->
 
     <section class="order">
-      <div data-aos="fade-up" data-aos-duration="3000">
+      <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
         <div class="inner">
           <div class="bg_img">
             <figure>
@@ -609,8 +616,8 @@
       content.style.display = "block"; // 컨텐츠를 보여줌
     }
 
- 
-  
+
+
     var swiper = new Swiper(".mySwiper", {
       navigation: {
         nextEl: ".swiper-button-next",
@@ -635,7 +642,7 @@
         prevEl: ".swiper-button-prev",
       },
     });
-
+    //스크롤 다운 시 헤더 배경색 변경
     $(window).on("scroll", function () {
       if ($(window).scrollTop() > 50) {
         $(".header").addClass("active");
@@ -644,8 +651,15 @@
         $(".header").removeClass("active");
       }
     });
-
-       AOS.init();
+    AOS.init();
+    /* 헤더 스크롤 다운시 텍스트 색상 체인지 */
+    $(document).on('scroll', function(){
+    if ( $(window).scrollTop() > 30) {
+        $('.depth01>a').addClass('change-color');
+    } else {
+        $('.depth01>a').removeClass('change-color');
+    }
+});
   </script>
 
 </body>

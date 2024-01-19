@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 .notosanskr * {
@@ -75,21 +82,24 @@ li {
 
 .header {
     height: 100px;
-    width: 1920px;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #e8e8e88f;
+    background-color: rgba(104, 104, 104, 0.452);
     justify-content: center;
     align-items: center;
     z-index: 999;
     margin: 0 auto;
     transition: background-color 0.3s;
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
 }
 
 .active {
     background-color: #fff;
+    border-bottom: 1px solid #c5c5c5;
 }
 
 .header .inner {
@@ -119,7 +129,7 @@ li {
 
 .header .inner .main_hd nav::before {
     content: '';
-    width: 1800px;
+    width: 1920px;
     height: 300px;
     background: #333333dc;
     position: absolute;
@@ -127,6 +137,7 @@ li {
     left: 50%;
     transform: translateX(-50%);
     display: none;
+    z-index: 99;
 }
 
 .header .inner .main_hd nav:hover::before {
@@ -178,7 +189,7 @@ li {
     padding: 0 30px;
     margin: 0 auto;
     position: relative;
-    color: #333;
+    color: #fff;
     font-weight: 700;
     font-size: 20px;
 }
@@ -199,6 +210,8 @@ li {
     padding: 20px;
     display: none;
     z-index: 99999;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
 }
 
 .header .inner .main_hd .gnb .depth02 li {
@@ -213,6 +226,10 @@ li {
 .header .inner .main_hd .gnb .depth02 li:hover {
     color: #C30E2E;
     font-weight: bold;
+}
+
+.change-color {
+    color:#333;
 }
 
 /* ==============메인비쥬얼 */
@@ -246,7 +263,7 @@ li {
     position: fixed;
     top: 100px;
     right: 100px;
-    z-index: 999;
+    z-index: 88;
 }
 
 .main_visual .banner a figure {
@@ -386,6 +403,7 @@ li {
 
 .Menu .swiper-slide a figure {
     width: 199px;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -768,10 +786,18 @@ li {
     margin-bottom: 20px;
 }
 
+.footer .footer_menu .inner li::before {
+    content: "|";
+    padding: 0 10px;
+}
+
+.footer .footer_menu .inner li:first-child:before{
+    display: none;
+}
+
 .footer .footer_menu .inner li a {
     font-size: 14px;
     font-weight: normal;
-    padding-right: 20px;
 }
 
 .footer .footer_info {
@@ -808,7 +834,7 @@ li {
     position: absolute;
     bottom: 35px;
     left: 605px;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 12px;
 }
 
